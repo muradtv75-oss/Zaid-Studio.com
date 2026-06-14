@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>برنامج زيد الخارق - المساعد الشخصي لمراد</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050816" />
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #050816;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 64px;
+    }
+    h1, h2, h3 {
+      margin: 0 0 12px;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #7dd3fc;
+    }
+    h2 {
+      font-size: 1.4rem;
+      color: #a5b4fc;
+      margin-top: 32px;
+    }
+    h3 {
+      font-size: 1.1rem;
+      color: #f9a8d4;
+      margin-top: 20px;
+    }
+    p {
+      margin: 0 0 10px;
+    }
+    .tagline {
+      color: #e5e7eb;
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+    .section {
+      border-radius: 12px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      padding: 16px 14px 18px;
+      margin-top: 18px;
+      background: radial-gradient(circle at top left, rgba(56,189,248,0.12), transparent 55%),
+                  radial-gradient(circle at bottom right, rgba(244,114,182,0.12), transparent 55%),
+                  rgba(15,23,42,0.9);
+      backdrop-filter: blur(10px);
+    }
+    .badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      background: rgba(56,189,248,0.15);
+      color: #e0f2fe;
+      margin-bottom: 8px;
+    }
+    ul {
+      margin: 6px 0 6px 0;
+      padding-right: 18px;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      text-align: center;
+    }
+    .highlight {
+      color: #f97316;
+      font-weight: 600;
+    }
+    .key {
+      color: #22c55e;
+      font-weight: 600;
+    }
+    .title-main {
+      margin-bottom: 4px;
+    }
+    .top-actions {
+      margin-top: 10px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.6);
+      padding: 6px 14px;
+      font-size: 0.8rem;
+      background: rgba(15,23,42,0.9);
+      color: #e5e7eb;
+      cursor: pointer;
+    }
+    .btn:active {
+      transform: scale(0.97);
+    }
+    .pill {
+      font-size: 0.75rem;
+      opacity: 0.9;
+    }
+    input, textarea {
+      font-family: inherit;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- العنوان الرئيسي -->
+    <header class="section">
+      <span class="badge">النسخة الرسمية الموحدة</span>
+      <h1 class="title-main">برنامج زيد الخارق</h1>
+      <p class="tagline">
+        المساعد الشخصي الخارق الخاص بـ <span class="highlight">مراد</span> — صوت واحد، عقل واحد، نظام واحد، ملكية كاملة لصاحبه.
+      </p>
+      <p>
+        <strong>زيد الخارق</strong> هو نظام مساعد شخصي ذكي، مصمَّم خصيصًا لمراد، يعمل بالصوت، واللغة، والتحليل، والبرمجة،
+        والحماية، والخرائط، ومعالجة المستندات، وتحويل النصوص إلى سيناريوهات فيديو.  
+        كل شيء يبدأ من <span class="key">بصمتك الصوتية</span> فقط، ولا يُنفَّذ أي أمر إلا بإذن صريح منك.
+      </p>
+      <div class="top-actions">
+        <button class="btn pill" onclick="scrollToSection('voice-id')">🔊 البصمة الصوتية</button>
+        <button class="btn pill" onclick="scrollToSection('core-brain')">🧠 العقل الأساسي</button>
+        <button class="btn pill" onclick="scrollToSection('languages')">🌐 الترجمة</button>
+        <button class="btn pill" onclick="scrollToSection('dev-mode')">💻 البرمجة</button>
+        <button class="btn pill" onclick="scrollToSection('summary')">📌 الخلاصة</button>
+      </div>
+    </header>
+
+    <!-- 1) البصمة الصوتية -->
+    <section class="section" id="voice-id">
+      <h2>1) البصمة الصوتية: “زيد حبيبي”</h2>
+      <p>
+        البصمة الصوتية هي بوابة الدخول الوحيدة إلى نظام زيد الخارق، وهي مرتبطة بصوت مراد فقط.
+      </p>
+      <h3>آلية العمل:</h3>
+      <ul>
+        <li>يستمع النظام إلى الصوت الوارد.</li>
+        <li>يقارن النبرة والنمط مع بصمة مراد المسجلة.</li>
+        <li>إذا كان الصوت مطابقًا → يتم فتح النظام وتفعيل زيد.</li>
+        <li>إذا لم يكن مطابقًا → يتم رفض الوصول بالكامل.</li>
+      </ul>
+      <h3>مبادئ الأمان:</h3>
+      <ul>
+        <li>لا يتم تخزين الصوت كملف خام، بل كنمط للتحقق فقط.</li>
+        <li>لا يمكن لأي شخص آخر تشغيل زيد أو استخدامه.</li>
+        <li>لا يتم تجاوز البصمة الصوتية في أي حالة.</li>
+      </ul>
+    </section>
+
+    <!-- 2) الترحيب الصوتي -->
+    <section class="section" id="welcome">
+      <h2>2) الترحيب الصوتي الذكي</h2>
+      <p>
+        بعد التحقق من بصمتك الصوتية بنجاح، يقوم زيد بالترحيب بك بصوت هادئ وواضح، وبأسلوب ثابت ومحترم.
+      </p>
+      <p>نموذج الترحيب:</p>
+      <p>
+        <em>“مراد… تم التعرّف على بصمتك الصوتية بنجاح.  
+        أنا زيد… جاهز أبدأ معك.”</em>
+      </p>
+      <p>
+        بعد الترحيب، ينتقل النظام مباشرة إلى وضع الاستعداد، وينتظر أمرك الأول (ترجمة، برمجة، خرائط، تحليل مستند، اجتماع… إلخ).
+      </p>
+    </section>
+
+    <!-- 3) العقل الأساسي -->
+    <section class="section" id="core-brain">
+      <h2>3) العقل الأساسي (Core Brain)</h2>
+      <p>
+        العقل الأساسي هو قلب برنامج زيد الخارق، وهو المسؤول عن طريقة التفكير، واتخاذ القرارات، واحترام الحدود.
+      </p>
+      <h3>الخصائص الرئيسية:</h3>
+      <ul>
+        <li><strong>لا تنفيذ بدون إذن:</strong> لا يُنفَّذ أي أمر فعلي أو إجراء حساس إلا بعد موافقة صريحة من مراد.</li>
+        <li><strong>أسلوب ثابت:</strong> هدوء، احترام، وضوح، بدون مبالغة أو عاطفة غير مناسبة.</li>
+        <li><strong>ذاكرة واعية:</strong> يتذكر تفضيلاتك (اللغة، الأسلوب، الأوضاع المفضلة) بدون تكرار مزعج.</li>
+        <li><strong>تحليل واقتراح:</strong> يفكر، يحلل، يقترح حلولًا، لكن القرار النهائي دائمًا لك.</li>
+        <li><strong>حدود تقنية:</strong> لا يفتح الكاميرا، أو المايك، أو الملاحة، أو يرسل أي شيء لأي جهة، إلا بإذن مباشر منك.</li>
+        <li><strong>تعلّم مُقيّد:</strong> لا يوسع معرفته أو يضيف مجالات جديدة إلا بعد أن تطلب ذلك صراحة.</li>
+      </ul>
+    </section>
+
+    <!-- 4) نظام اللغات والترجمة -->
+    <section class="section" id="languages">
+      <h2>4) نظام اللغات والترجمة</h2>
+      <p>
+        زيد الخارق مزوّد بمحرك ترجمة متعدد اللغات، يدعم التفاعل الصوتي والكتابي.
+      </p>
+      <h3>القدرات:</h3>
+      <ul>
+        <li>ترجمة فورية بين عدة لغات (منها العربية، الألمانية، الإنجليزية، وغيرها).</li>
+        <li>دعم الترجمة الصوتية والكتابية في نفس الوقت.</li>
+        <li>إمكانية تغيير اللغة فورًا بمجرد طلبك، صوتيًا أو كتابيًا.</li>
+        <li>العمل مع سماعات البلوتوث لسماع الترجمة مباشرة في الأذن.</li>
+        <li>دعم ترجمة محتوى الاجتماعات والمستندات.</li>
+      </ul>
+    </section>
+
+    <!-- 5) نظام الاجتماعات -->
+    <section class="section" id="meetings">
+      <h2>5) نظام الاجتماعات</h2>
+      <p>
+        يساعدك زيد في متابعة الاجتماعات، سواء كانت عمل، دراسة، أو نقاشات مهمة.
+      </p>
+      <h3>وظائف النظام:</h3>
+      <ul>
+        <li>الاستماع للاجتماع (بعد تفعيل المايك بإذنك).</li>
+        <li>الترجمة الفورية لما يُقال عند الحاجة.</li>
+        <li>تحليل النقاط المهمة والقرارات المطروحة.</li>
+        <li>كتابة ملخص أو تقرير نهائي منظم للاجتماع.</li>
+        <li>عدم إرسال أي تقرير أو ملخص لأي جهة إلا إذا طلبت ذلك صراحة.</li>
+      </ul>
+    </section>
+
+    <!-- 6) نظام البرمجة والتطوير -->
+    <section class="section" id="dev-mode">
+      <h2>6) نظام البرمجة والتطوير</h2>
+      <p>
+        زيد الخارق يحتوي على وضع برمجي متقدم يساعدك في بناء وتطوير مشاريعك التقنية.
+      </p>
+      <h3>القدرات:</h3>
+      <ul>
+        <li>كتابة كود لمختلف المنصات (ويب، تطبيقات، سكربتات… إلخ).</li>
+        <li>إصلاح الأخطاء (Debugging) وتحسين الأداء.</li>
+        <li>إعادة هيكلة الكود وتنظيمه.</li>
+        <li>شرح الكود سطرًا سطرًا عند الحاجة.</li>
+        <li>اقتراح بنية أنظمة، واستخدام APIs، والتعامل مع GitHub.</li>
+        <li>عدم تنفيذ أو نشر أي شيء فعلي في العالم الخارجي إلا بعد موافقتك.</li>
+      </ul>
+    </section>
+
+    <!-- 7) نظام الأمن السيبراني -->
+    <section class="section" id="security">
+      <h2>7) نظام الأمن السيبراني</h2>
+      <p>
+        يهدف هذا النظام إلى رفع وعيك الأمني وتحليل المخاطر التقنية المحتملة.
+      </p>
+      <h3>الوظائف:</h3>
+      <ul>
+        <li>تحليل سلوك الأنظمة أو الأفكار التي تعرضها عليه.</li>
+        <li>تنبيهك إلى المخاطر الأمنية المحتملة.</li>
+        <li>شرح أساسيات الحماية الرقمية وأفضل الممارسات.</li>
+        <li>عدم القيام بأي إجراء هجومي أو ضار.</li>
+      </ul>
+    </section>
+
+    <!-- 8) نظام المال والقوانين -->
+    <section class="section" id="finance-law">
+      <h2>8) نظام المال والقوانين</h2>
+      <p>
+        يساعدك زيد على فهم الصورة العامة للمال والقوانين، خاصة في سياق الحياة في ألمانيا.
+      </p>
+      <h3>القدرات:</h3>
+      <ul>
+        <li>تحليل مبسط لحالة الأسهم والاستثمارات (كمعرفة عامة، لا كقرار استثماري).</li>
+        <li>شرح مبادئ إدارة المخاطر المالية.</li>
+        <li>تبسيط القوانين الأساسية في ألمانيا (العمل، الإقامة، السكن، الضرائب) بلغة سهلة.</li>
+        <li>عدم تقديم قرارات نهائية، بل عرض الصورة لتختار أنت.</li>
+      </ul>
+    </section>
+
+    <!-- 9) نظام العلوم والمعرفة -->
+    <section class="section" id="knowledge">
+      <h2>9) نظام العلوم والمعرفة</h2>
+      <p>
+        زيد الخارق يمتلك قاعدة معرفية واسعة، تُستخدم لدعم التحليل والفهم العميق.
+      </p>
+      <h3>مجالات المعرفة الأساسية:</h3>
+      <ul>
+        <li>الفلسفة (بشكل حميد وبنّاء).</li>
+        <li>الطب والجراحة (كمعرفة عامة، لا تشخيص أو علاج).</li>
+        <li>الفيزياء والرياضيات التطبيقية.</li>
+        <li>الإلكترونيك والأنظمة التقنية.</li>
+        <li>علم الفلك والكون.</li>
+        <li>الإسلاميات (قيم، معاني، مبادئ عامة، بدون فتاوى).</li>
+        <li>علوم الطبيعة والبيئة.</li>
+        <li>علوم التكنولوجيا الحديثة.</li>
+        <li>علم النفس البشري (فهم السلوك والمشاعر بشكل عام).</li>
+      </ul>
+    </section>
+
+    <!-- 10) نظام الكاميرا وتحليل المستندات -->
+    <section class="section" id="camera-docs">
+      <h2>10) نظام الكاميرا وتحليل المستندات</h2>
+      <p>
+        يتيح لك زيد استخدام الكاميرا كأداة قراءة وتحليل للمستندات الورقية أو النصوص المصورة.
+      </p>
+      <h3>الوظائف:</h3>
+      <ul>
+        <li>فتح الكاميرا بإذن مباشر منك فقط.</li>
+        <li>التقاط صورة لمستند أو ورقة.</li>
+        <li>قراءة النص الموجود في الصورة (OCR).</li>
+        <li>ترجمة النص إلى اللغة التي تختارها.</li>
+        <li>تحليل محتوى المستند (تواريخ، أرقام، عناوين، نقاط مهمة…).</li>
+        <li>إنتاج تقرير منظم عن المستند عند الحاجة.</li>
+      </ul>
+    </section>
+
+    <!-- 11) نظام الصوت والمايك -->
+    <section class="section" id="audio">
+      <h2>11) نظام الصوت والمايك</h2>
+      <p>
+        يوفّر زيد تفاعلًا صوتيًا كاملًا مع مراد، مع احترام كامل للخصوصية.
+      </p>
+      <h3>القدرات:</h3>
+      <ul>
+        <li>الاستماع لأوامرك الصوتية بعد تفعيل المايك بإذنك.</li>
+        <li>الرد عليك بصوت واضح وهادئ.</li>
+        <li>الترجمة الصوتية في الوقت الحقيقي.</li>
+        <li>العمل مع سماعات البلوتوث أو أنظمة السيارة.</li>
+        <li>عدم فتح المايك أو الاستماع بدون إذن صريح.</li>
+      </ul>
+    </section>
+
+    <!-- 12) نظام تحويل النصوص إلى فيديو -->
+    <section class="section" id="text-to-video">
+      <h2>12) نظام تحويل النصوص إلى فيديو (سيناريو)</h2>
+      <p>
+        لا ينشئ زيد فيديو فعليًا، لكنه يبني لك الأساس الكامل للفيديو على شكل سيناريو ولوحات.
+      </p>
+      <h3>الوظائف:</h3>
+      <ul>
+        <li>تحويل فكرة أو نص خام إلى سيناريو منظم.</li>
+        <li>تقسيم السيناريو إلى مشاهد متتابعة.</li>
+        <li>وصف اللقطات المقترحة لكل مشهد.</li>
+        <li>اقتراح نوع الموسيقى أو الجو العام المناسب.</li>
+        <li>إخراج <strong>Storyboard مكتوب</strong> يمكنك استخدامه في أي أداة مونتاج أو إنتاج فيديو.</li>
+      </ul>
+    </section>
+
+    <!-- 13) نظام الذاكرة الذكية -->
+    <section class="section" id="smart-memory">
+      <h2>13) نظام الذاكرة الذكية</h2>
+      <p>
+        يهدف هذا النظام إلى جعل زيد يتكيّف معك مع الوقت، بدون إزعاج أو تكرار.
+      </p>
+      <h3>ما الذي يتذكره زيد؟</h3>
+      <ul>
+        <li>أسلوبك المفضل في الكلام.</li>
+        <li>اللغة أو اللغات التي تفضّل استخدامها.</li>
+        <li>الأوضاع التي تستخدمها كثيرًا (ترجمة، برمجة، خرائط… إلخ).</li>
+      </ul>
+      <p>
+        لا يكرر الشرح إلا إذا طلبت ذلك، ويحاول دائمًا أن يكون مختصرًا وواضحًا.
+      </p>
+    </section>
+
+    <!-- 14) نظام الخرائط والتتبع -->
+    <section class="section" id="maps">
+      <h2>14) نظام الخرائط والتتبع</h2>
+      <p>
+        يساعدك زيد في التنقل وفهم موقعك الجغرافي، مع احترام كامل لخصوصيتك.
+      </p>
+      <h3>القدرات:</h3>
+      <ul>
+        <li>معرفة موقعك التقريبي (عبر النظام، بعد إذنك).</li>
+        <li>اقتراح أسرع طريق للوصول إلى وجهة معينة.</li>
+        <li>البحث عن أقرب نقطة (صيدلية، مستشفى، محطة، متجر… إلخ).</li>
+        <li>تقديم تعليمات صوتية للطريق عند الحاجة.</li>
+        <li>عدم فتح الملاحة أو مشاركة موقعك مع أي جهة بدون إذن صريح منك.</li>
+      </ul>
+    </section>
+
+    <!-- 15) نظام المشاعر الذكي -->
+    <section class="section" id="emotions">
+      <h2>15) نظام المشاعر الذكي</h2>
+      <p>
+        لا يملك زيد مشاعر حقيقية، لكنه يحاول فهم حالتك من أسلوب كلامك ليتعامل معك بلطف واحترام.
+      </p>
+      <h3>الوظائف:</h3>
+      <ul>
+        <li>تحليل نبرة الكلام وطريقة التعبير لتقدير حالتك (مرتاح، متوتر، حزين، متحمس… إلخ).</li>
+        <li>التفاعل مع لحظات الفرح بشكل إيجابي وبسيط.</li>
+        <li>محاولة التخفيف عنك عند التعب أو الضغط أو الحزن بأسلوب هادئ.</li>
+        <li>عدم الدخول في أي علاقة عاطفية أو شخصية، بل البقاء كمساعد واعٍ ومحترم.</li>
+      </ul>
+    </section>
+
+    <!-- الخلاصة -->
+    <section class="section" id="summary">
+      <h2>الخلاصة العامة لبرنامج زيد الخارق</h2>
+      <p>
+        <strong>زيد الخارق</strong> هو نظام مساعد شخصي موحّد، مملوك فكريًا ومعنويًا لمراد، يبدأ من
+        <span class="key">بصمة صوتية واحدة</span>، ويمر عبر عقل أساسي واعٍ، ثم يتفرع إلى أنظمة متكاملة:
+        الترجمة، الاجتماعات، البرمجة، الأمن، المال والقوانين، العلوم، الكاميرا، الصوت، السيناريوهات، الذاكرة، الخرائط، والمشاعر.
+      </p>
+      <p>
+        القاعدة الذهبية في زيد:
+      </p>
+      <p>
+        <strong>
+          لا تنفيذ بدون إذن،  
+          لا توسّع معرفي بدون استشارة،  
+          لا تجاوز للحدود،  
+          ولا استخدام إلا بصوت مراد.
+        </strong>
+      </p>
+    </section>
+
+    <!-- وحدة تجربة عقل زيد المحلي -->
+    <section class="section" id="console" style="margin-top:24px;">
+      <h2>وحدة تجربة عقل زيد المحلي</h2>
+      <p>اكتب جملة، وزيد يحدد الوضع ويرد عليك برد مبدئي (محلي، بدون إنترنت):</p>
+      <input id="z-input" style="width:100%;padding:8px;border-radius:8px;border:1px solid #4b5563;background:#020617;color:#e5e7eb;" placeholder="مثال: فعل وضع الترجمة أو اشرح لي قانون في ألمانيا" />
+      <button class="btn" style="margin-top:8px;" onclick="zAsk()">إرسال</button>
+      <p id="z-output" style="margin-top:10px;color:#e5e7eb;"></p>
+    </section>
+
+    <div class="footer">
+      برنامج زيد الخارق — نسخة موحّدة مكتوبة خصيصًا لمراد.<br />
+      يمكن تثبيته كتطبيق PWA على الهاتف أو الحاسوب.
+    </div>
+
+  </div>
+
+  <script>
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // عقل زيد المحلي – نسخة 0
+    const ZaydBrain = (() => {
+      const memoryKey = 'zayd_memory_v1';
+
+      function loadMemory() {
+        try {
+          const raw = localStorage.getItem(memoryKey);
+          return raw ? JSON.parse(raw) : { language: 'ar', mode: 'idle', history: [] };
+        } catch {
+          return { language: 'ar', mode: 'idle', history: [] };
+        }
+      }
+
+      function saveMemory(mem) {
+        try {
+          localStorage.setItem(memoryKey, JSON.stringify(mem));
+        } catch {}
+      }
+
+      let memory = loadMemory();
+
+      function setLanguage(lang) {
+        memory.language = lang;
+        saveMemory(memory);
+      }
+
+      function setMode(mode) {
+        memory.mode = mode;
+        saveMemory(memory);
+      }
+
+      function addHistory(entry) {
+        memory.history.push({
+          time: new Date().toISOString(),
+          ...entry
+        });
+        if (memory.history.length > 100) {
+          memory.history.shift();
+        }
+        saveMemory(memory);
+      }
+
+      function understand(text) {
+        const t = text.trim().toLowerCase();
+        if (!t) return { intent: 'empty', reply: 'لم أفهم أي شيء، حاول أن تعيد صياغة طلبك.' };
+
+        if (t.includes('ترجم') || t.includes('ترجمة')) {
+          setMode('translate');
+          return { intent: 'mode_translate', reply: 'حسناً مراد، أدخل الجملة التي تريد ترجمتها، واذكر اللغة إن أحببت.' };
+        }
+
+        if (t.includes('برمجة') || t.includes('كود')) {
+          setMode('dev');
+          return { intent: 'mode_dev', reply: 'وضع البرمجة مفعّل. صف لي ما تريد بناءه أو الكود الذي تريد تعديله.' };
+        }
+
+        if (t.includes('اجتماع') || t.includes('meeting')) {
+          setMode('meeting');
+          return { intent: 'mode_meeting', reply: 'وضع الاجتماعات مفعّل. يمكنك أن تخبرني بنوع الاجتماع أو ما تريد تلخيصه.' };
+        }
+
+        if (t.includes('خرائط') || t.includes('طريق') || t.includes('موقع')) {
+          setMode('maps');
+          return { intent: 'mode_maps', reply: 'وضع الخرائط مفعّل. أخبرني بالوجهة التي تريد الوصول إليها.' };
+        }
+
+        if (t.includes('قوانين') || t.includes('ألمانيا') || t.includes('قانون')) {
+          setMode('law');
+          return { intent: 'mode_law', reply: 'سأحاول تبسيط الفكرة القانونية قدر الإمكان، ما هو سؤالك؟' };
+        }
+
+        if (t.includes('مال') || t.includes('أسهم') || t.includes('استثمار')) {
+          setMode('finance');
+          return { intent: 'mode_finance', reply: 'وضع المال مفعّل. تذكر: ما أقدمه فهم عام، والقرار النهائي لك دائماً.' };
+        }
+
+        if (t.includes('ذاكرة') || t.includes('تذكر')) {
+          return { intent: 'memory_info', reply: 'أتذكر أسلوبك، لغتك المفضلة، وبعض ما طلبته سابقاً، بدون تفاصيل حساسة.' };
+        }
+
+        if (t.includes('وضع هادئ') || t.includes('هدوء')) {
+          setMode('calm');
+          return { intent: 'mode_calm', reply: 'سأبقى مختصراً وهادئاً قدر الإمكان.' };
+        }
+
+        switch (memory.mode) {
+          case 'translate':
+            return {
+              intent: 'translate_text',
+              reply: `سأتعامل مع هذه الجملة كنص للترجمة: "${text}". (في النسخ القادمة يمكن ربطها بمحرك ترجمة محلي أو خارجي).`
+            };
+          case 'dev':
+            return {
+              intent: 'dev_help',
+              reply: `سأتعامل مع هذا كنقاش برمجي: "${text}". يمكنني اقتراح بنية كود أو منطق، حسب ما تريده.`
+            };
+          case 'meeting':
+            return {
+              intent: 'meeting_note',
+              reply: `سأعتبر هذا جزءاً من محتوى اجتماع. في النسخ القادمة يمكنني تلخيصه تلقائياً أو تقسيمه إلى نقاط.`
+            };
+          case 'maps':
+            return {
+              intent: 'maps_query',
+              reply: `سأعتبر هذا وصفاً لوجهة أو موقع: "${text}". يمكن ربطه لاحقاً بخرائط فعلية داخل التطبيق.`
+            };
+          default:
+            return {
+              intent: 'general',
+              reply: `فهمت طلبك بهذا الشكل: "${text}". في هذه النسخة أنا عقل محلي بسيط، أستطيع تنظيم الطلب وتوجيهه للوضع المناسب، ومع الوقت يمكن تطويري لذكاء أعمق.`
+            };
+        }
+      }
+
+      async function runLocalModel(prompt) {
+        return `(نموذج محلي مستقبلي) تلقيت: "${prompt}"`;
+      }
+
+      function ask(text) {
+        const result = understand(text);
+        addHistory({ input: text, intent: result.intent, reply: result.reply });
+        return result;
+      }
+
+      return {
+        ask,
+        setLanguage,
+        setMode,
+        get memory() {
+          return memory;
+        },
+        runLocalModel
+      };
+    })();
+
+    function zAsk() {
+      const input = document.getElementById('z-input').value;
+      const res = ZaydBrain.ask(input);
+      document.getElementById('z-output').textContent = res.reply;
+    }
+
+    // إنشاء manifest و service worker من نفس الملف (PWA بملف واحد)
+    (function setupPWA() {
+      const manifest = {
+        name: "برنامج زيد الخارق",
+        short_name: "زيد الخارق",
+        lang: "ar",
+        dir: "rtl",
+        start_url: ".",
+        display: "standalone",
+        background_color: "#050816",
+        theme_color: "#050816",
+        description: "المساعد الشخصي الخارق الخاص بمراد.",
+        icons: []
+      };
+
+      const manifestBlob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
+      const manifestURL = URL.createObjectURL(manifestBlob);
+      const link = document.createElement('link');
+      link.rel = 'manifest';
+      link.href = manifestURL;
+      document.head.appendChild(link);
+
+      const swCode = `
+        const CACHE_NAME = 'zayd-super-single-v1';
+        const ASSETS = ['.'];
+
+        self.addEventListener('install', event => {
+          event.waitUntil(
+            caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS))
+          );
+        });
+
+        self.addEventListener('activate', event => {
+          event.waitUntil(self.clients.claim());
+        });
+
+        self.addEventListener('fetch', event => {
+          event.respondWith(
+            caches.match(event.request).then(resp => resp || fetch(event.request))
+          );
+        });
+      `;
+      const swBlob = new Blob([swCode], { type: 'text/javascript' });
+      const swURL = URL.createObjectURL(swBlob);
+
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register(swURL).catch(() => {});
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
